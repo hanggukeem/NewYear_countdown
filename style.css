@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+  background-image: url(images/background_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body * {
+  z-index: 1;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  margin-top: 80px;
+}
+div#countdown {
+  width: 800px;
+  color: #f3f3f3;
+  margin: 0 auto;
+  display: flex;
+}
+div.time {
+  width: 200px;
+  height: 200px;
+  font-size: 50px;
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0 auto;
+  position: relative;
+}
+div.time h2 {
+  font-size: 70px;
+}
+div.time span {
+  width: 200px;
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+}
+div#year {
+  color: #f2f2f2;
+  font-size: 200px;
+  font-style: italic;
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 500px) {
+  div.time {
+    font-size: 50px;
+  }
+}
